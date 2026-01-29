@@ -596,19 +596,19 @@
                         <span class="icon">💧</span>
                         <span>Eau</span>
                     </button>
-                    <button class="category-btn" onclick="goToCategory(2, 1)">
+                    <button class="category-btn" onclick="goToCategory(3, 0)">
                         <span class="icon">🥐</span>
                         <span>Pâtisseries</span>
                     </button>
-                    <button class="category-btn" onclick="goToCategory(3, 0)">
+                    <button class="category-btn" onclick="goToCategory(4, 0)">
                         <span class="icon">🧂</span>
                         <span>Salée</span>
                     </button>
-                    <button class="category-btn" onclick="goToCategory(3, 0)">
+                    <button class="category-btn" onclick="goToCategory(4, 0)">
                         <span class="icon">🚬</span>
                         <span>Narguilé</span>
                     </button>
-                    <button class="category-btn" onclick="goToCategory(3, 1)">
+                    <button class="category-btn" onclick="goToCategory(5, 0)">
                         <span class="icon">🃏</span>
                         <span>Jeux</span>
                     </button>
@@ -946,6 +946,7 @@
                 
                 <div class="page-number">7</div>
             </div>
+            
             <div class="page page-right" style="background:linear-gradient(135deg,#00897b,#00695c);display:flex;align-items:center;justify-content:center">
                 <div style="text-align:center;color:#fff">
                     <h2 style="font-family:'Cormorant Garamond',serif;font-size:3rem;margin-bottom:20px;font-style:italic">Merci!</h2>
@@ -1045,6 +1046,8 @@
                 
                 <div class="page-number">3</div>
             </div>
+        </div>
+        <div class="page-spread" data-spread="3">
             <div class="page page-right">
                 <div class="page-decoration deco-bottom-right">🥐</div>
                 <div class="menu-section">
@@ -1117,7 +1120,7 @@
         </div>
         
         <!-- Page Spread 3 -->
-        <div class="page-spread" data-spread="2">
+        <div class="page-spread" data-spread="4">
             <div class="page page-left">
                 <div class="page-decoration deco-top-left">🧂</div>
                 <div class="menu-section">
@@ -1173,6 +1176,8 @@
                 
                 <div class="page-number">5</div>
             </div>
+        </div>
+        <div class="page-spread" data-spread="5">
             <div class="page page-right">
                 <div class="page-decoration deco-bottom-right">🃏</div>
                 <div class="menu-section">
@@ -1220,7 +1225,7 @@
     <script>
         let currentSpread = 0;
         let currentMobilePage = 0; // 0 = left page, 1 = right page
-        const totalSpreads = 4; // Updated to 4 spreads
+        const totalSpreads = 5; // Updated to 4 spreads
         const isMobile = () => window.innerWidth <= 968;
         
         function updatePages() {
